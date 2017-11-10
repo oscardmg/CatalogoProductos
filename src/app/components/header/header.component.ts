@@ -1,12 +1,15 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
+import {InformacionService} from '../../services/informacion.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  ngOnInit(): void {
+  constructor(
+    public is: InformacionService
+  ) {
 
   }
 }

@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import {InformacionService} from '../../services/informacion.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,10 @@ export class FooterComponent {
 
   ano:number = new Date().getFullYear();
 
-  constructor() { }
+  constructor(
+    public is: InformacionService
+  ) {
+
+  }
 
 }
