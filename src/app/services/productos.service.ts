@@ -23,6 +23,7 @@ export class ProductosService {
       this.http.get('https://catalogoproductos-33228.firebaseio.com/productos_idx.json')
         .subscribe( res => {
           // console.log(res.json());
+          this.productos = res.json();
           this.cargando = false;
         });
     }
