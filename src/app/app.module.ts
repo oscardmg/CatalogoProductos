@@ -16,6 +16,7 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import {HttpModule} from '@angular/http';
+import {ProductosService} from './services/productos.service';
 
 
 
@@ -34,7 +35,8 @@ import {HttpModule} from '@angular/http';
     app_routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
