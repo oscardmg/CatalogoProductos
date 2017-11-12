@@ -37,4 +37,10 @@ export class ProductosService {
     }
   }
 
+  public cargar_producto(cod: string) {
+
+    return this.http.get(`https://catalogoproductos-33228.firebaseio.com/productos/${cod}.json`);
+
+  }
+
 }
