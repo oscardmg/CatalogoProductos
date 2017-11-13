@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import {HttpModule} from '@angular/http';
 import {ProductosService} from './services/productos.service';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -27,7 +28,8 @@ import {ProductosService} from './services/productos.service';
     FooterComponent,
     CatalogoComponent,
     AboutComponent,
-    ProductoComponent
+    ProductoComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

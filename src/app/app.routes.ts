@@ -3,7 +3,8 @@ import {Routes, RouterModule} from '@angular/router';
 import {
   AboutComponent,
   CatalogoComponent,
-  ProductoComponent
+  ProductoComponent,
+  SearchComponent
 } from './components/index.paginas';
 
 
@@ -11,6 +12,7 @@ export const app_routes: Routes = [
   {path: 'home', component: CatalogoComponent },
   {path: 'about', component: AboutComponent },
   {path: 'producto/:id', component: ProductoComponent },
+  {path: 'search/:termino', component: SearchComponent },
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
