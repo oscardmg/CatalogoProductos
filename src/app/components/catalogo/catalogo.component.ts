@@ -8,11 +8,8 @@ import {ProductosService} from '../../services/productos.service';
 export class CatalogoComponent {
 
   constructor(
-    private ps: ProductosService
-  ) {
-
-
-  }
+    public ps: ProductosService
+  ) {  }
 
 
 
