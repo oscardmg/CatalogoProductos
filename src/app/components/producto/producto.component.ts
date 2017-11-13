@@ -9,6 +9,7 @@ import {ProductosService} from '../../services/productos.service';
 export class ProductoComponent {
 
   producto: any = undefined;
+  cod:string = undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -18,14 +19,14 @@ export class ProductoComponent {
     route.params.subscribe(parametros => {
       // console.log(parametros);
       // console.log(parametros['id']);
+      this.cod = parametros['id'];
 
-
-      ps.cargar_producto(parametros['id'])
+      ps.cargar_producto(this.cod)
         .subscribe( res => {
           // console.log(res.json());
 
           this.producto = res.json();
-
+          console.log(this.producto);
         });
 
     });
