@@ -21,7 +21,7 @@ export class HeaderComponent {
    * @param {string} termino
    */
   public buscar_producto(termino:string) {
-    console.log(termino);
+    //console.log(termino);
 
     this.router.navigate(['search', termino]);
 
