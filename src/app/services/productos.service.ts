@@ -25,7 +25,6 @@ export class ProductosService {
         // lo voy hacer con promesa
         this.http.get('https://catalogoproductos-33228.firebaseio.com/productos_idx.json')
           .subscribe( res => {
-            // console.log(res.json());
 
             // setTimeout(() => {
             //   this.productos = res.json();
@@ -66,12 +65,10 @@ export class ProductosService {
   private filtrar_productos(termino:string) {
     // si termino coincide con titulo o categoria
 
-    console.log("Entro a filtrar productos")
 
     this.productos_filtrados = [];
     termino = termino.toLowerCase();
 
-    console.log(this.productos);
 
     this.productos.forEach( prod => {
 

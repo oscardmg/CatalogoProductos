@@ -26,7 +26,6 @@ export class ProductoComponent {
           // console.log(res.json());
 
           this.producto = res.json();
-          console.log(this.producto);
         });
 
     });
